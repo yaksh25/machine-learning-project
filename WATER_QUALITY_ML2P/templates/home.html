@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        
+        
+    </head>
+    
+    <body style="background-image:-webkit-linear-gradient(left,lightblue,darkblue)" >
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <br><br><br><br><br><h1 align="middle" font-size:70px><b>WATER QUALITY PREDICTION</b></h1><br><br><br><br>
+        <p align="middle" font-size:40px><b><ul><li>Water quality is the physical, chemical and biological characteristics of water. It is a<br>
+            measure of the condition of water relative to the requirements of one or more biotic species and or to<br> 
+            any human need or purpose.</li>
+            <li>The vast majority of surface water on the planet is neither potable nor toxic.</li><br>
+            <li>Approximately 25% of the world’s population has no access to potable water. The pollution may be direct<br> 
+            or indirect. Industries,runoff from agriculture, discharge of untreated sewage are the major cause of water pollution.</li><br>
+            <li>Access to safe drinking-water is essential to health, a basic human right and a component of effective policy for health protection.<br>
+            This is important as a health and development issue at a national, regional and local level. In some regions, it has been shown that <br>
+            investments in water supply and sanitation can yield a net economic benefit, since the reductions in adverse health effects and health <br>
+            care costs outweigh the costs of undertaking the interventions.</li><br>
+            <li>The water quality parameters is used for testing the potability are:</li>
+            <ol><li><b>pH value:</b>
+                PH is an important parameter in evaluating the acid–base balance of water. It is also the indicator of acidic or alkaline condition of<br>
+                water status. WHO has recommended maximum permissible limit of pH from 6.5 to 8.5. The current investigation ranges were 6.52–7.5 which are in the <br>
+                range of WHO standards.</li>
+                <li><b>Hardness:</b>
+                    Hardness is mainly caused by calcium and magnesium salts. These salts are dissolved from geologic deposits through which water travels. The length<br> 
+                    of time water is in contact with hardness producing material helps determine how much hardness there is in raw water. Hardness was originally defined<br>
+                    as the capacity of water to precipitate soap caused by Calcium and Magnesium.</li>
+                <li><b>Solids (Total dissolved solids - TDS):</b>
+                    Water has the ability to dissolve a wide range of inorganic and some organic minerals or salts such as potassium, calcium, sodium, bicarbonates,<br> 
+                    chlorides, magnesium, sulfates etc. These minerals produced un-wanted taste and diluted color in appearance of water. This is the important parameter<br>
+                    for the use of water. The water with high TDS value indicates that water is highly mineralized. Desirable limit for TDS is 500 mg/l and maximum limit is <br>
+                    1000 mg/l which prescribed for drinking purpose.</li>
+                <li><b>Chloramines:</b>
+                    Chlorine and chloramine are the major disinfectants used in public water systems. Chloramines are most commonly formed when ammonia is added to chlorine<br> 
+                    to treat drinking water. Chlorine levels up to 4 milligrams per liter (mg/L or 4 parts per million (ppm)) are considered safe in drinking water.</li>
+                <li><b>Sulfate:</b>
+                    Sulfates are naturally occurring substances that are found in minerals, soil, and rocks. They are present in ambient air, groundwater, plants, and food.<br>
+                    The principal commercial use of sulfate is in the chemical industry. Sulfate concentration in seawater is about 2,700 milligrams per liter (mg/L). It ranges<br>
+                    from 3 to 30 mg/L in most freshwater supplies, although much higher concentrations (1000 mg/L) are found in some geographic locations.</li>
+                <li><b>Conductivity:</b>
+                    Pure water is not a good conductor of electric current rather’s a good insulator. Increase in ions concentration enhances the electrical conductivity of water.<br>
+                    Generally, the amount of dissolved solids in water determines the electrical conductivity. Electrical conductivity (EC) actually measures the ionic process of a<br>
+                     solution that enables it to transmit current. According to WHO standards, EC value should not exceeded 400 μS/cm.</li>
+                <li><b>Organic_carbon:</b>
+                    Total Organic Carbon (TOC) in source waters comes from decaying natural organic matter (NOM) as well as synthetic sources. TOC is a measure of the total amount<br> 
+                    of carbon in organic compounds in pure water. According to US EPA < 2 mg/L as TOC in treated / drinking water, and < 4 mg/Lit in source water which is use for treatment.</li>
+                <li><b>Trihalomethanes:</b>
+                    THMs are chemicals which may be found in water treated with chlorine. The concentration of THMs in drinking water varies according to the level of organic material <br>
+                    in the water, the amount of chlorine required to treat the water, and the temperature of the water that is being treated. THM levels up to 80 ppm is considered safe in drinking water.</li>
+                <li><b>Turbidity:</b>
+                    The turbidity of water depends on the quantity of solid matter present in the suspended state. It is a measure of light emitting properties of water and the test is used to indicate<br>
+                    the quality of waste discharge with respect to colloidal matter. The mean turbidity value obtained for Wondo Genet Campus (0.98 NTU) is lower than the WHO recommended value of 5.00 NTU.</li>
+            </ol>
+            <li>The target variable:
+                Potability:
+                Indicates if water is safe for human consumption where 1 means Potable and 0 means Not potable.</li>
+            </ul>
+
+            
+        </p>
+        <br><br><br><br><center>
+        <form method="POST" action="{{url_for('index')}}"> 
+        <button style="color:black; font-size:50px; background-color:aqua;" type='submit' >Let's Predict</button>
+        </form>
+        </center>
+    </body>

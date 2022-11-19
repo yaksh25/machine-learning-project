@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Water quality test Pages</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            h1 {text-align: center;}
+            span {text-align: center;}
+            input {text-align: center;}
+            .label {
+              color: white;
+              padding: 8px;
+              font-family: Arial;
+            }
+            .PH {background-color: #210b70;} /* Blue */
+            .hardness {background-color: #210b70;} /* Blue */
+            .solids {background-color: #210b70;} /* Blue */
+            .chloromines {background-color: #210b70;} /* Blue */
+            .sulfate {background-color: #210b70;} /* Blue */
+            .conductivity {background-color: #210b70;} /* Blue */
+            .organiccarbon {background-color: #210b70;} /* Blue */
+            .trihalomethanes {background-color: #210b70;} /* Blue */
+            .turbidity {background-color: #210b70;} /* Blue */
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                }
+            
+        </style>
+        <link rel="stylesheet" href="">
+    </head>
+    <body bgcolor="black">
+        <h1 style="color:red">LET'S PREDICT WHETHER THE QUALITY OF WATER IS POTABLE OR NOT POTABLE</h1>
+        <center>
+            <form method="POST" action="{{url_for('waterPred')}}"> 
+            <span class="label PH">ENTER THE PH </span><br><br>
+            <input type = 'text' placeholder='Enter Ph value' name='ph'> <br><br>
+            <span class="label hardness">ENTER THE HARDNESS(mg/L) </span><br><br>
+            <input type = 'text' placeholder='Enter hardness' name='hardness'> <br><br>
+            <span class="label solids">ENTER THE SOLIDS(ppm)</span><br><br>
+            <input type = 'text' placeholder='Enter solids' name='solids'> <br><br>
+            <span class="label chloromines">ENTER THE CHLOROMINES(ppm) </span><br><br>
+            <input type = 'text' placeholder='Enter chloromines' name='chloromines'> <br><br>
+            <span class="label sulfate">ENTER THE SULFATE(mg/L) </span><br><br>
+            <input type = 'text' placeholder='Enter sulphate' name='sulphate'> <br><br>
+            <span class="label conductivity">ENTER THE CONDUCTIVITY(μS/cm) </span><br><br>
+            <input type = 'text' placeholder='Enter conductivity' name='conductivity'> <br><br>
+            <span class="label organiccarbon">ENTER THE ORGANIC CARBON(ppm)</span><br><br>
+            <input type = 'text' placeholder='Enter organic carbon' name='organic carbon'> <br><br>
+            <span class="label trihalomethanes">ENTER THE TRIHALOMETHANES(μg/L)</span><br><br>
+            <input type = 'text' placeholder='Enter trihalomethanes' name='trihalomethanes'> <br><br>
+            <span class="label turbidity">ENTER THE TURBIDITY(NTU) </span><br><br>
+            <input type = 'text' placeholder='Enter turbidity' name='turbidity'> <br><br>
+            
+            <button style="color:white; font-size:30px; background-color:red;" type='submit' > Predict Water Potability</button>
+        </form>
+        </center>
+    </body>
+</html>
